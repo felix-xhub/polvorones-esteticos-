@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>POLVORONES ESTÉTICOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden; 
+      font-family: Arial, sans-serif;
+      background-color: #ffc0cb;
+      background-image: url('imagen35.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+
+    header {
+      top: 0;
+    }
+    footer {
+      bottom: 0;
+      height: 40px; 
+      background-color: transparent;
+      box-shadow: none;
+      color: transparent; 
+      padding: 0;
+      margin: 0;
+    }
+
+    nav {
+      position: fixed;
+      top: 80px; 
+      width: 100%;
+      background-color: #fff0f5;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #d6336c;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #f8d0dc;
+      border-radius: 8px;
+    }
+
+    
+    section {
+      display: none;
+      height: calc(100vh - 120px); 
+      padding: 20px;
+      overflow-y: auto; 
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 80px 20px 20px 20px; 
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 40px;
+      color: #d6336c;
+      margin: 0;
+    }
+
+    
+    .labiales-container, .rubores-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .labial-card, .rubor {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 15px;
+      text-align: center;
+      width: 200px;
+    }
+
+    .labial-card img, .rubor img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .labial-name, .rubor p {
+      color: #d6336c;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    table {
+      width: 95%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #e6ccff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #d9b3ff;
+    }
+
+    img.tabla-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BIENVENIDOS A POLVORONES ESTÉTICOS</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" data-section="labiales" class="active">Página Labiales</a></li>
+      <li><a href="#" data-section="rubores">Página Rubores</a></li>
+      <li><a href="#" data-section="inventario">Página Inventario</a></li>
+      <li><a href="#" data-section="contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="labiales" class="active">
+    <h2>Tonos de Labiales</h2>
+    <div class="labiales-container">
+      <div class="labial-card"><img src="imagen12.jpeg" alt="Rojo Clásico"><div class="labial-name">Rojo Clásico<br>$120 MXN</div></div>
+      <div class="labial-card"><img src="imagen13.jpeg" alt="Rosa Pastel"><div class="labial-name">Rosa Pastel<br>$110 MXN</div></div>
+      <div class="labial-card"><img src="imagen14.jpeg" alt="Coral Suave"><div class="labial-name">Coral Suave<br>$115 MXN</div></div>
+      <div class="labial-card"><img src="imagen15.jpeg" alt="Vino Intenso"><div class="labial-name">Vino Intenso<br>$130 MXN</div></div>
+      <div class="labial-card"><img src="imagen16.jpeg" alt="Nude Elegante"><div class="labial-name">Nude Elegante<br>$105 MXN</div></div>
+      <div class="labial-card"><img src="imagen17.jpeg" alt="Fucsia Vibrante"><div class="labial-name">Fucsia Vibrante<br>$125 MXN</div></div>
+      <div class="labial-card"><img src="imagen18.jpeg" alt="Marrón Cacao"><div class="labial-name">Marrón Cacao<br>$115 MXN</div></div>
+      <div class="labial-card"><img src="imagen19.jpeg" alt="Malva Romántico"><div class="labial-name">Malva Romántico<br>$118 MXN</div></div>
+    </div>
+  </section>
+
+  <section id="rubores">
+    <h2>Rubores Dior</h2>
+    <div class="rubores-container">
+      <div class="rubor"><p>001 PINK</p><img src="imagen6.jpeg" alt="001 PINK"></div>
+      <div class="rubor"><p>004 CORAL</p><img src="imagen5.jpeg" alt="004 CORAL"></div>
+      <div class="rubor"><p>012 ROSEWOOD</p><img src="imagen7.jpeg" alt="012 ROSEWOOD"></div>
+      <div class="rubor"><p>015 CHERRY</p><img src="imagen8.jpeg" alt="015 CHERRY"></div>
+      <div class="rubor"><p>006 BERRY</p><img src="imagen9.jpeg" alt="006 BERRY"></div>
+      <div class="rubor"><p>020 MAHOGANY</p><img src="imagen10.jpeg" alt="020 MAHOGANY"></div>
+    </div>
+  </section>
+
+  <section id="inventario">
+    <h2>Inventario de Productos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>N°</th><th>Cosmético</th><th>Tipo</th><th>En Bodega</th><th>Precio</th><th>Contenido</th><th>Imagen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Labial Monbu</td><td>Labial</td><td>300</td><td>$89</td><td>3.5 g</td><td><img class="tabla-img" src="imagen12.jpeg" alt="Labial Monbu"></td></tr>
+        <tr><td>2</td><td>Rímel D.J.G.</td><td>Rímel</td><td>250</td><td>$120</td><td>10 ml</td><td><img class="tabla-img" src="imagen22.jpeg" alt="Rímel D.J.G."></td></tr>
+        <tr><td>3</td><td>Rubor Espesor</td><td>Rubor</td><td>400</td><td>$105</td><td>5 g</td><td><img class="tabla-img" src="imagen9.jpeg" alt="Rubor Espesor"></td></tr>
+        <tr><td>4</td><td>Base Líquida PerfectSkin</td><td>Base de maquillaje</td><td>550</td><td>$190</td><td>30 ml</td><td><img class="tabla-img" src="imagen23.jpeg" alt="Base Líquida PerfectSkin"></td></tr>
+        <tr><td>5</td><td>Polvo Compacto ClearTone</td><td>Polvo compacto</td><td>220</td><td>$140</td><td>10 g</td><td><img class="tabla-img" src="imagen24.jpeg" alt="Polvo Compacto ClearTone"></td></tr>
+        <tr><td>6</td><td>Delineador BlackPoint</td><td>Delineador</td><td>25</td><td>$75</td><td>1.2 ml</td><td><img class="tabla-img" src="imagen25.jpeg" alt="Delineador BlackPoint"></td></tr>
+        <tr><td>7</td><td>Sombra NeonGlow</td><td>Sombra de ojos</td><td>8</td><td>$180</td><td>12 g</td><td><img class="tabla-img" src="imagen26.jpeg" alt="Sombra NeonGlow"></td></tr>
+        <tr><td>8</td><td>Corrector SoftBlend</td><td>Corrector</td><td>16</td><td>$95</td><td>7 ml</td><td><img class="tabla-img" src="imagen27.jpeg" alt="Corrector SoftBlend"></td></tr>
+        <tr><td>9</td><td>Iluminador StarLight</td><td>Iluminador</td><td>14</td><td>$110</td><td>6 g</td><td><img class="tabla-img" src="imagen28.jpeg" alt="Iluminador StarLight"></td></tr>
+        <tr><td>10</td><td>Primer GlowTouch</td><td>Primer</td><td>9</td><td>$130</td><td>20 ml</td><td><img class="tabla-img" src="imagen29.jpeg" alt="Primer GlowTouch"></td></tr>
+        <tr><td>11</td><td>Bronceador SunnyLook</td><td>Bronceador</td><td>7</td><td>$135</td><td>9 g</td><td><img class="tabla-img" src="imagen30.jpeg" alt="Bronceador SunnyLook"></td></tr>
+        <tr><td>12</td><td>Fijador MakeItLast</td><td>Spray fijador</td><td>6</td><td>$160</td><td>100 ml</td><td><img class="tabla-img" src="imagen31.jpeg" alt="Fijador MakeItLast"></td></tr>
+        <tr><td>13</td><td>Bálsamo LipGuard</td><td>Bálsamo labial</td><td>30</td><td>$60</td><td>4 g</td><td><img class="tabla-img" src="imagen32.jpeg" alt="Bálsamo LipGuard"></td></tr>
+        <tr><td>14</td><td>Gel para cejas BrowFix</td><td>Gel de cejas</td><td>10</td><td>$75</td><td>5 ml</td><td><img class="tabla-img" src="imagen33.jpeg" alt="Gel para cejas BrowFix"></td></tr>
+        <tr><td>15</td><td>Paleta contorno ProShape</td><td>Contorno</td><td>5</td><td>$250</td><td>20 g</td><td><img class="tabla-img" src="imagen34.jpeg" alt="Paleta contorno ProShape"></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Correo: michelcrz2021@gmail.com</p>
+    <p>Teléfono: 712-227-4848</p>
+    <p><a href="https://www.instagram.com/polvorones_219magicos?igsh=b2U3MHh5eGV1MDFn" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+    <p><a href="https://www.facebook.com/share/1_EHxnPTggg/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+  </section>
+
+  <footer></footer>
+
+  <script>
+    
+    const links = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
+
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('data-section');
+
+        
+        sections.forEach(sec => sec.classList.remove('active'));
+
+       
+        links.forEach(l => l.classList.remove('active'));
+
+        
+        const targetSection = document.getElementById(targetId);
+        if(targetSection) targetSection.classList.add('active');
+
+        
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
